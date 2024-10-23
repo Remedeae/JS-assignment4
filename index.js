@@ -1,3 +1,25 @@
+//Exercise 3
+
+function guessNumberGame() {
+    const correctNumber = Math.floor(Math.random() * 10) + 1;
+    let guess = null;
+
+    while (guess !== correctNumber) {
+        guess = parseInt(prompt("Guess a number between 1 and 10!"))
+        if (guess < correctNumber) {
+            console.log("A little higher");            
+        }
+        else {
+            console.log("A little lower");
+            
+        }
+    }
+    console.log("Congratulations, you win!");
+    
+}
+
+guessNumberGame();
+
 //Exercise 2
 
 function generateRandomArray(length) {
