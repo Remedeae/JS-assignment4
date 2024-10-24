@@ -1,4 +1,4 @@
-//Exercise 3
+//Exercise 1
 
 function guessNumberGame() {
     const correctNumber = Math.floor(Math.random() * 10) + 1;
@@ -7,7 +7,7 @@ function guessNumberGame() {
     while (guess !== correctNumber) {
         guess = parseInt(prompt("Guess a number between 1 and 10!"))
         if (guess < correctNumber) {
-            console.log("A little higher");            
+            console.log("A little higher");        
         }
         else {
             console.log("A little lower");
